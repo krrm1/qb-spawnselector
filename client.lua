@@ -167,8 +167,8 @@ RegisterNUICallback("backward", function(data)
     end
 end)
 
-RegisterNetEvent("qb-selector:set")
-AddEventHandler("qb-selector:set" , function()
+RegisterNetEvent("qb-spawnselector:set")
+AddEventHandler("qb-spawnselector:set" , function()
     BuildSelector('');
 end)
 
