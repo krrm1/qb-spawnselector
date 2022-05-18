@@ -38,4 +38,5 @@ RegisterNetEvent('qb-spawn:client:setupSpawns', function(cData, new, apps)
             locations = apps,
         })
     end
-end) ```
+end)
+```
