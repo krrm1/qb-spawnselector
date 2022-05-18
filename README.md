@@ -21,7 +21,8 @@ go to this line in qb-spawn/client.lua
 
 and replace it with this
 
-``` RegisterNetEvent('qb-spawn:client:setupSpawns', function(cData, new, apps)
+``` 
+RegisterNetEvent('qb-spawn:client:setupSpawns', function(cData, new, apps)
     if not new then
         SetNuiFocus(false, false)
         SendNUIMessage({
