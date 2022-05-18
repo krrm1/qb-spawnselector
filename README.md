@@ -40,3 +40,5 @@ RegisterNetEvent('qb-spawn:client:setupSpawns', function(cData, new, apps)
     end
 end)
 ```
+
+https://discord.gg/rV7pZzCa32
