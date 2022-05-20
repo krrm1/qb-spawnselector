@@ -13,15 +13,40 @@ spawn button :
 
 *
 
-how to add it :
+how to add it : 
 
-go to this line in qb-spawn/client.lua
+one go to qb-apartments client/main.lua
 
-![image](https://user-images.githubusercontent.com/89742984/169073088-935f1893-5b33-4c03-a57e-d9b5bf6fb056.png)
+and go to this event 'apartments:client:setupSpawnUI' 
 
-and replace it with this
+and replace it with this 
+```
+RegisterNetEvent('apartments:client:setupSpawnUI', function(cData)
+    QBCore.Functions.TriggerCallback('apartments:GetOwnedApartment', function(result)
+        if result then
+            TriggerEvent('qb-spawn:client:setupSpawns', cData, false, nil)
+            TriggerEvent("apartments:client:SetHomeBlip", result.type)
+        else
+            if Apartments.Starting then
+                TriggerEvent('qb-spawn:client:setupSpawns', cData, true, Apartments.Locations)
+                TriggerEvent('qb-spawn:client:openUI', true)
+            else
+                TriggerEvent('qb-spawn:client:setupSpawns', cData, false, nil)
+                TriggerEvent('qb-spawn:client:openUI', true)
+            end
+        end
+    end, cData.citizenid)
+end)
+```
 
-``` 
+*
+
+two  go to qb-spawn client
+
+and go to this event 'qb-spawn:client:setupSpawns'
+
+and replace it with tihs
+```
 RegisterNetEvent('qb-spawn:client:setupSpawns', function(cData, new, apps)
     if not new then
         SetNuiFocus(false, false)
@@ -30,8 +55,8 @@ RegisterNetEvent('qb-spawn:client:setupSpawns', function(cData, new, apps)
             status = false
         })
         choosingSpawn = false
-            Wait(500)
-            TriggerEvent('qb-spawnselector:set')
+        Wait(500)
+        TriggerEvent('qb-spawnselector:opennui')
     elseif new then
         SendNUIMessage({
             action = "setupAppartements",
@@ -40,5 +65,7 @@ RegisterNetEvent('qb-spawn:client:setupSpawns', function(cData, new, apps)
     end
 end)
 ```
+
+*
 
 https://discord.gg/rV7pZzCa32
