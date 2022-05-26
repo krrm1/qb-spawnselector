@@ -1,6 +1,6 @@
 # qb-spawnselector
 i add my magic on it ;) and this is just a selector to where you want to spawn not full code for qb-spawn
-
+THIS IS NOT QB-SPAWN ⚠⚠⚠⚠⚠⚠⚠⚠
 *
 
 last location : 
