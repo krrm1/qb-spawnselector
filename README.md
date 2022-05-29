@@ -53,14 +53,7 @@ and replace it with tihs
 ```
 RegisterNetEvent('qb-spawn:client:setupSpawns', function(cData, new, apps)
     if not new then
-        SetNuiFocus(false, false)
-        SendNUIMessage({
-            type = "ui",
-            status = false
-        })
-        choosingSpawn = false
-        Wait(500)
-        TriggerEvent("qb-spawnselector:set")
+         TriggerEvent('qb-spawnselector:set')
     elseif new then
         SendNUIMessage({
             action = "setupAppartements",
