@@ -1,5 +1,5 @@
 local hasFocus, locations, fading, current = false, false, {};
-local QBCore = exports['qb-core']:GetCoreObject()
+local QBCore = exports['arabcodingteam-core']:GetCoreObject()
 
 function BuildSelector(data)
     locations, playerData, hasFocus = BuildLocations(data), data, true;
@@ -167,8 +167,8 @@ RegisterNUICallback("backward", function(data)
     end
 end)
 
-RegisterNetEvent("qb-spawnselector:set")
-AddEventHandler("qb-spawnselector:set" , function()
+RegisterNetEvent("arabcodingteam-spawnselector:set")
+AddEventHandler("arabcodingteam-spawnselector:set" , function()
     BuildSelector('');
 end)
 
