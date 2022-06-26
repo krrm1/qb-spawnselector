@@ -1,4 +1,4 @@
-# qb-spawnselector
+# arabcodingteam-spawnselector
 i add my magic on it ;)
 
 
