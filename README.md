@@ -1,8 +1,5 @@
 # qb-spawnselector
-i add my magic on it ;)
-
-
-THIS IS NOT QB-SPAWN ⚠⚠⚠⚠⚠⚠⚠⚠
+better update for the script 😘
 
 
 *
