@@ -1,5 +1,5 @@
 # qb-spawnselector
-better update for the script 😘
+soon better update
 
 
 *
