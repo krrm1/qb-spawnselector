@@ -42,3 +42,4 @@ RegisterNetEvent('qb-spawn:client:setupSpawns', function(cData, new, apps)
 end)
 
 ```
+![image](https://github.com/krrm1/qb-spawnselector/assets/89742984/cd673113-3856-4f36-8fd2-23c2a5af3d15)
