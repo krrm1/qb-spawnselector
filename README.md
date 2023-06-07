@@ -1,26 +1,12 @@
 # qb-spawnselector
-soon better update
 
 
-*
+- how to install it (this not a full qb-spawn Just a custom spawn selector)
 
-last location : 
-https://www.youtube.com/watch?v=T-gNq3MhG70
+- 1 go to qb-apartments client/main.lua
 
-*
+* go to this event 'apartments:client:setupSpawnUI'  and replace it with this
 
-spawn button :
-![image](https://user-images.githubusercontent.com/89742984/169070700-5e1805a3-e895-4230-804e-2478910b103c.png)
-
-*
-
-how to add it : 
-
-one go to qb-apartments client/main.lua
-
-and go to this event 'apartments:client:setupSpawnUI' 
-
-and replace iT ALL with this 
 ```
 RegisterNetEvent('apartments:client:setupSpawnUI', function(cData)
     QBCore.Functions.TriggerCallback('apartments:GetOwnedApartment', function(result)
