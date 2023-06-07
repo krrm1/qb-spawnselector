@@ -32,7 +32,7 @@ end)
 ```
 RegisterNetEvent('qb-spawn:client:setupSpawns', function(cData, new, apps)
     if not new then
-         TriggerEvent('qb-spawnselector:set')
+         TriggerEvent('qb-spawnselector:StartSpawnSelector')
     elseif new then
         SendNUIMessage({
             action = "setupAppartements",
@@ -40,4 +40,5 @@ RegisterNetEvent('qb-spawn:client:setupSpawns', function(cData, new, apps)
         })
     end
 end)
+
 ```
