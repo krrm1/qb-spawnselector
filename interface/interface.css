@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500;700&display=swap');
+
+    body {
+        display: none;
+        margin: 0%;
+        font-family: 'Heebo', sans-serif;
+        color: white;
+        user-select: none;
+        font-weight: 600;
+    }
+
+    .location {
+        z-index: 999;
+        position: absolute;
+        left: 5%;
+        bottom: 10%;
+    }
+
+    .location .name {
+        font-size: 2.5vh;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+    }
+
+    .location .hr {
+        margin: 1vh 0vh 1vh 0vh;
+        filter: blur(0.1vh);
+        -webkit-filter: blur(0.1vh);
+        background-color: RGBA(0,0,0, 0.3);
+        width: 50vh;
+        padding: 0.3vh 0.2vh 0.3vh 0.2vh;
+        border-radius: 1vh;
+    }
+
+    .location .spawn {
+        font-size: 1.40vh;
+        text-align: right;
+        float: right;
+        padding: 1vh 5vh 1vh 5vh;
+        background-color: rgba(230, 21, 21, 0.8);
+        border-radius: 3vh;
+        color: rgb(255, 255, 255);
+        transition: color 200ms;
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+        -moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+        box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+    }
+
+    .location .spawn:hover {
+        color: rgba(0, 0, 0, 1);
+    }
+
+    .location .lastloc {
+        font-size: 1.30vh;
+        text-align: right;
+        float: left;
+        padding: 1vh 5vh 1vh 5vh;
+        background-color: rgba(230, 21, 21, 0.8);
+        border-radius: 3vh;
+        color: rgb(255, 255, 255);
+        transition: color 200ms;
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+        -moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+        box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+    }
+
+    .location .lastloc:hover {
+        color: rgba(0, 0, 0, 1);
+    }
+
+    .custom-button {
+        font-size: xx-large;
+        transition: font-size 0.20s;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.562));
+    }
+    
+    .custom-button:hover {
+        font-size: 3.30vh;
+    }
+      
+    #legionsquare {
+        position: absolute;
+        top: 553px;
+        left: 820px;
+        color: rgb(255, 68, 68);
+    }
+
+    #casino {
+        position: absolute;
+        top: 889px;
+        left: 1495px;
+        color: rgb(118 236 255);
+    }
+
+    #bank {
+        position: absolute;
+        top: 574px;
+        left: 1531px;
+        color: #6eff24;
+    }
+
+    #impound {
+        position: absolute;
+        top: 584px;
+        left: 432px;
+        color: rgb(255 255 255);
+    }
+
+     #apartment { /* will add soon */
+        display: none;
+        position: absolute;
+        top: 536px;
+        left: 925px;
+        color: rgb(255, 180, 68);
+      }
