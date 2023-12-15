@@ -2,7 +2,9 @@
 
 : https://discord.gg/SWHHr88xa4
 
-- how to install it (this not a full qb-spawn Just a custom spawn selector)
+(this not a full qb-spawn Just a custom spawn selector)
+
+- how to installit 
 
 - go to qb-apartments client/main.lua
 
