@@ -2,7 +2,7 @@
 
 (this not a full qb-spawn Just a custom spawn selector)
 
-- how to installit 
+- how to install it 
 
 - go to qb-apartments client/main.lua
 
