@@ -1,7 +1,5 @@
 # qb-spawnselector
 
-: https://discord.gg/SWHHr88xa4
-
 (this not a full qb-spawn Just a custom spawn selector)
 
 - how to installit 
