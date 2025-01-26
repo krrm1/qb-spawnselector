@@ -95,7 +95,7 @@ local function Spawn(data)
         DoScreenFadeIn(1000)
         TriggerScreenblurFadeOut(1000.0)
         DestroyCamPed()
-        print('sent to jaill')
+        QBCore.Functions.Notify('Send To Jaill', 500)
     elseif LastSpawn == false then
         DoScreenFadeOut(250)
         Citizen.Wait(500)
