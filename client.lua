@@ -149,15 +149,18 @@ end)
 -- nui button
 
 RegisterNUICallback("lastloc", function()
+    local src = source
+
     if CanSpawn == true then
         LastSpawn = true
         Spawn()
     else
-        print('kick')
+        QBCore.Functions.Kick(src, 'Check Discord ❗', nil, nil)
     end
 end)
 
 RegisterNUICallback("spawn", function()
+    local src = source
     local spawn = Config.SpawnCoords
 
     if CanSpawn == true then
@@ -171,13 +174,15 @@ RegisterNUICallback("spawn", function()
             Spawn(spawn.impound)
         end
     else
-        print('kick')
+        QBCore.Functions.Kick(src, 'Check Discord ❗', nil, nil)
     end
 end)
 
 -- spawn nui
 
 RegisterNUICallback("legionsquare", function()
+    local src = source
+
     if CanSpawn == true then
         legionsquare = true
         casino = false
@@ -185,11 +190,13 @@ RegisterNUICallback("legionsquare", function()
         impound = false
         LastSpawn = false
     else
-        print('kick')
+        QBCore.Functions.Kick(src, 'Check Discord ❗', nil, nil)
     end
 end)
 
 RegisterNUICallback("casino", function()
+    local src = source
+
     if CanSpawn == true then
         casino = true
         legionsquare = false
@@ -197,11 +204,13 @@ RegisterNUICallback("casino", function()
         impound = false
         LastSpawn = false
     else
-        print('kick')
+        QBCore.Functions.Kick(src, 'Check Discord ❗', nil, nil)
     end
 end)
 
 RegisterNUICallback("bank", function()
+    local src = source
+
     if CanSpawn == true then
         bank = true
         legionsquare = false
@@ -209,11 +218,13 @@ RegisterNUICallback("bank", function()
         impound = false
         LastSpawn = false
     else
-        print('kick')
+        QBCore.Functions.Kick(src, 'Check Discord ❗', nil, nil)
     end
 end)
 
 RegisterNUICallback("impound", function()
+    local src = source
+
     if CanSpawn == true then
         impound = true
         bank = false
@@ -221,6 +232,6 @@ RegisterNUICallback("impound", function()
         casino = false
         LastSpawn = false
     else
-        print('kick')
+        QBCore.Functions.Kick(src, 'Check Discord ❗', nil, nil)
     end
 end)

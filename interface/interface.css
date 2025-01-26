@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500;700&display=swap');
 
     body {
-        display: none;
+        display: show;
         margin: 0%;
         font-family: 'Heebo', sans-serif;
         color: white;
@@ -109,9 +109,9 @@
     }
 
      #apartment { /* will add soon */
-        display: none;
+        display: show;
         position: absolute;
         top: 536px;
         left: 925px;
-        color: rgb(255, 180, 68);
+        color: rgb(255, 227, 68);
       }
