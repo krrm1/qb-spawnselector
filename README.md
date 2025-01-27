@@ -6,7 +6,7 @@
 
 - [1] go to qb-apartments client/main.lua
 
-* [1] go to 'apartments:client:setupSpawnUI' and (replace) it with this
+* [2] go to 'apartments:client:setupSpawnUI' and (replace) it with this
 
 ```
 RegisterNetEvent('apartments:client:setupSpawnUI', function(cData)
@@ -27,7 +27,7 @@ RegisterNetEvent('apartments:client:setupSpawnUI', function(cData)
 end)
 ```
 
-- [2] go to qb-spawn qb-spawn/client.lua
+- [1] go to qb-spawn qb-spawn/client.lua
 
 * [2] go to 'qb-spawn:client:setupSpawns' and (replace) it with this
 ```
