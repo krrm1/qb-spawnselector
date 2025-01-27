@@ -1,12 +1,12 @@
 # qb-spawnselector
 
-(this not a full qb-spawn Just a custom spawn selector)
+❗❗THIS IS NOT A FULLY SPAWN THIS IS JUST A SPAWNS SELECTOR ❗❗
 
 - how to install it 
 
-- go to qb-apartments client/main.lua
+- [1] go to qb-apartments client/main.lua
 
-* go to this event 'apartments:client:setupSpawnUI' and (replace) it with this
+* [1] go to 'apartments:client:setupSpawnUI' and (replace) it with this
 
 ```
 RegisterNetEvent('apartments:client:setupSpawnUI', function(cData)
@@ -27,9 +27,9 @@ RegisterNetEvent('apartments:client:setupSpawnUI', function(cData)
 end)
 ```
 
-- go to qb-spawn qb-spawn/client.lua
+- [2] go to qb-spawn qb-spawn/client.lua
 
-* go to this event 'qb-spawn:client:setupSpawns' and (replace) it with this
+* [2] go to 'qb-spawn:client:setupSpawns' and (replace) it with this
 ```
 RegisterNetEvent('qb-spawn:client:setupSpawns', function(cData, new, apps)
     if not new then
