@@ -1,7 +1,6 @@
 var legionsquare = document.getElementById("legionsquare");
 var Casino = document.getElementById("casino");
 var bank = document.getElementById("bank");
-var apartment = document.getElementById("apartment"); // will add soon 
 var impound = document.getElementById("impound");
 
 window.addEventListener('message', function(event) {
@@ -15,31 +14,27 @@ window.addEventListener('message', function(event) {
         case 'hide':
             $("body").hide();
             break;
-
-        case 'update':
-            $(".name").html(data.label);
-            break;
     }
 });
 
 legionsquare.addEventListener("click", function() {
     $.post(`https://qb-spawnselector/legionsquare`);
+    $(".name").html('Legion Square');
 });
 
 casino.addEventListener("click", function() {
     $.post(`https://qb-spawnselector/casino`);
+    $(".name").html('Casino');
 });
 
 bank.addEventListener("click", function() {
     $.post(`https://qb-spawnselector/bank`);
+    $(".name").html('City Bank');
 });
 
 impound.addEventListener("click", function() {
     $.post(`https://qb-spawnselector/impound`);
-});
-
-apartment.addEventListener("click", function() { // will add soon
-    $.post(`https://qb-spawnselector/apartment`);
+    $(".name").html('Impound Vehicle');
 });
 
 $(".spawn").click(function() {

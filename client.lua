@@ -1,6 +1,6 @@
 local QBCore = exports['qb-core']:GetCoreObject()
 
--- checks
+-- spwan checks
 local CanSpawn = false
 local LastSpawn = false
 local legionsquare = false
@@ -9,7 +9,8 @@ local bank = false
 local impound = false
 
 -- functions 
--- cam
+
+-- cam pos and names
 
 local function CreateCamPed()
     local ped = PlayerPedId()
@@ -29,7 +30,7 @@ local function DestroyCamPed()
     RenderScriptCams(false, false)
 end
 
--- ui 
+-- ui and button
 
 local function CreateUi(data)
     CreateCamPed()
@@ -184,11 +185,7 @@ RegisterNUICallback("legionsquare", function()
     local src = source
 
     if CanSpawn == true then
-        legionsquare = true
-        casino = false
-        bank = false
-        impound = false
-        LastSpawn = false
+        legionsquare = true casino = false bank = false impound = false LastSpawn = false
     else
         QBCore.Functions.Kick(src, 'Check Discord ❗', nil, nil)
     end
@@ -233,5 +230,17 @@ RegisterNUICallback("impound", function()
         LastSpawn = false
     else
         QBCore.Functions.Kick(src, 'Check Discord ❗', nil, nil)
+    end
+end)
+
+
+CreateThread(function()
+    while true do
+        Wait(0)
+        if CanSpawn == true then
+            DisableAllControlActions(0)
+        else
+            Wait(1000)
+        end
     end
 end)
